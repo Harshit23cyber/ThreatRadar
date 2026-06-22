@@ -1,52 +1,94 @@
 <div align="center">
-    <img src="logos/cyberguard.png" alt="ThreatRadar Logo" width="200" height="auto" />
-    <h1>ThreatRadar</h1>
-    <p><b>A modern, open-source platform for static threat intelligence and malware analysis.</b></p>
+  <img src="logo.png" alt="ThreatRadar Logo" width="300" />
+
+  # ThreatRadar
+  **A high-performance, open-source platform for static threat intelligence and malware analysis.**
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  [![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?logo=php&logoColor=white)](https://php.net/)
+  [![VirusTotal API](https://img.shields.io/badge/API-VirusTotal_v3-394EFF?logo=virustotal)](https://developers.virustotal.com/)
+  [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Harshit23cyber/ThreatRadar/issues)
+
+  [Overview](#overview) •
+  [Features](#features) •
+  [Installation](#installation) •
+  [Usage](#usage) •
+  [Documentation](#documentation) •
+  [Contributing](#contributing)
 </div>
 
-<br>
+---
 
 ## Overview
-ThreatRadar provides a clean, secure, and fast web interface to upload suspicious files and scan them against over 70 top-tier antivirus engines and URL/domain blocklisting services. It utilizes the powerful [VirusTotal v3 API](https://developers.virustotal.com/reference/overview) in the backend while providing a streamlined, community-driven front-end experience.
+
+ThreatRadar provides a clean, secure, and lightning-fast web interface to upload suspicious files and scan them against over 70 top-tier antivirus engines and URL/domain blocklisting services. Powered by the [VirusTotal v3 API](https://developers.virustotal.com/reference/overview), it delivers comprehensive deep-file metadata right to your browser with a streamlined, community-driven front-end experience.
 
 ## Features
-- **Comprehensive Scanning:** Submit files securely to VirusTotal.
-- **Immediate Polling:** Instantaneous Analysis ID generation with asynchronous polling.
-- **Safe Evaluation Environment:** Includes safe, industry-standard test strings (like EICAR) to evaluate the system without risk.
-- **Open Source Aesthetic:** Built with a premium, classic open-source project layout.
+
+- 🛡️ **Comprehensive Scanning:** Submit files securely and directly to VirusTotal's backend.
+- ⚡ **Real-Time Polling:** Instantaneous Analysis ID generation with seamless asynchronous polling.
+- 📊 **Deep Metadata Extraction:** View comprehensive file properties including MD5, SHA-256, SSDEEP, TLSH, Magic bytes, and Submission History natively in a clean tabbed UI.
+- 🧪 **Safe Evaluation Environment:** Includes safe, industry-standard test files (like EICAR) to evaluate your deployment without risk.
+- 🎨 **Premium Aesthetic:** Built with a modern, zero-dependency CSS framework inspired by enterprise open-source tools.
 
 ## Installation
 
 ### Prerequisites
-- PHP 8.0 or higher
-- cURL extension enabled in `php.ini`
-- Valid SSL certificate configured in `php.ini` (`curl.cainfo`)
+Before you begin, ensure you have the following installed and configured:
+- **PHP 8.0** or higher
+- The `cURL` extension enabled in your `php.ini`
+- A valid SSL certificate configured in your `php.ini` (`curl.cainfo`) to securely connect to the VirusTotal API.
 
-### Setup
-1. Clone the repository:
+### Setup Instructions
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/Harshit23cyber/ThreatRadar.git
    cd ThreatRadar
    ```
-2. Update the API Key:
-   Open `config.php` and replace the placeholder `VIRUSTOTAL_API_KEY` with your actual VirusTotal API key.
+
+2. **Configure API Credentials**
+   Open the `config.php` file and replace the placeholder `VIRUSTOTAL_API_KEY` with your actual, valid VirusTotal API key.
    ```php
-   define('VIRUSTOTAL_API_KEY', 'your_key_here');
+   // config.php
+   define('VIRUSTOTAL_API_KEY', 'your_secure_api_key_here');
    ```
-3. Start the built-in PHP server (using our custom router):
+
+3. **Start the Development Server**
+   ThreatRadar includes a custom router (`router.php`) for clean, extension-less URLs. Run it using PHP's built-in server:
    ```bash
    php -S localhost:8080 router.php
    ```
 
 ## Usage
-Navigate to `http://localhost:8080` in your browser. Upload any file (up to the configured 32MB limit) to instantly retrieve its scan results. 
 
-To test the integration safely, navigate to the `/samples` page to download harmless test files that trigger specific API responses.
+1. Navigate to `http://localhost:8080` in your web browser.
+2. Upload any suspicious file (up to the default configured limit of **32MB**).
+3. The file will be instantly uploaded and scanned, and you will be automatically redirected to the `/results` page to view the live analysis.
 
-## Licensing
-This project is released under the MIT License. See the [LICENSE](LICENSE) file for details. Data returned by the API is subject to the [DATA_LICENSE.txt](DATA_LICENSE.txt) and the [Terms of Service](TERMS_OF_SERVICE.md).
+> **Note:** To test the integration safely, navigate to the `/samples` page to download harmless test files (such as `eicar.com`) that safely trigger expected API detection responses.
 
-## Contributors
-We welcome pull requests! Huge thanks to our core contributors:
-- [@Harshit23cyber](https://github.com/Harshit23cyber)
-- [@nareshnarayanofficial](https://github.com/nareshnarayanofficial)
+## Architecture
+
+ThreatRadar utilizes a lightweight, modern PHP architecture avoiding heavy frameworks to ensure maximum speed and minimal surface area for vulnerabilities. All API interactions are handled securely via backend PHP cURL processes to prevent API key leakage to the client.
+
+## Documentation
+
+For full documentation, please see the specific pages integrated within the platform:
+- [API Reference](https://developers.virustotal.com/reference/overview)
+- [Terms of Service](TERMS_OF_SERVICE.md)
+- [Data License](DATA_LICENSE.txt)
+
+## Contributing
+
+We welcome pull requests and issues from the community! Huge thanks to our core maintainers:
+
+* [@Harshit23cyber](https://github.com/Harshit23cyber)
+* [@nareshnarayanofficial](https://github.com/nareshnarayanofficial)
+
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+## License
+
+This software project is proudly released under the [MIT License](LICENSE). 
+Data returned by the VirusTotal API is subject to their respective terms and our [Data Usage License](DATA_LICENSE.txt).
