@@ -90,9 +90,9 @@ include 'header.php';
 <div class="supported-by-section">
     <h2>Supported By</h2>
     <div class="logo-grid">
-        <div class="logo-item"><img src="logos/cyberguard.png" alt="CyberGuard"></div>
-        <div class="logo-item"><img src="logos/securenet.png" alt="SecureNet"></div>
-        <div class="logo-item"><img src="logos/openthreat.png" alt="OpenThreat"></div>
+        <div class="logo-item"><img src="https://cdn.simpleicons.org/google/6b7280" alt="Google"></div>
+        <div class="logo-item"><img src="https://cdn.simpleicons.org/github/6b7280" alt="GitHub"></div>
+        <div class="logo-item"><img src="https://cdn.simpleicons.org/vercel/6b7280" alt="Vercel"></div>
     </div>
 </div>
 

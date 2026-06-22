@@ -32,7 +32,6 @@
                 <li><a href="/LICENSE">Software License (MIT)</a></li>
                 <li><a href="/DATA_LICENSE.txt">Data Usage License</a></li>
                 <li><a href="/TERMS_OF_SERVICE.md">Terms of Service</a></li>
-                <li><a href="/projects">Pending Projects</a></li>
             </ul>
         </div>
     </div>
