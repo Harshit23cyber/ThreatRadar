@@ -48,35 +48,47 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['malware_file'])) {
 include 'header.php';
 ?>
 
-<h1>Threat Intelligence File Scanner</h1>
-<p>Upload a suspicious file below to scan it against over 70 antivirus scanners and URL/domain blocklisting services via the VirusTotal API.</p>
-
 <?php if ($error): ?>
-    <div class="alert alert-error">
+    <div class="alert alert-error" style="margin: 2rem auto; max-width: 800px;">
         <strong>Error:</strong> <?php echo $error; ?>
     </div>
 <?php endif; ?>
 
-<div class="upload-form">
-    <form action="index.php" method="post" enctype="multipart/form-data">
-        <label for="malware_file">Select file to scan:</label>
-        <input type="file" name="malware_file" id="malware_file" required>
-        <p style="font-size: 0.9em; color: #586069; margin-bottom: 15px;">By uploading, you agree to the Terms of Service. Max size: <?php echo MAX_UPLOAD_SIZE / 1024 / 1024; ?>MB.</p>
-        <button type="submit" class="btn">Scan File</button>
-    </form>
+<div class="hero">
+    <h1>Threat Intelligence File Scanner</h1>
+    <p>Upload suspicious files to scan them against over 70 antivirus engines and URL/domain blocklisting services via the VirusTotal API.</p>
+    
+    <div class="upload-card">
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <label for="malware_file">Select a file to securely scan</label>
+            <input type="file" name="malware_file" id="malware_file" required>
+            <button type="submit" class="btn">Analyze File</button>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+                By uploading, you agree to the <a href="TERMS_OF_SERVICE.md">Terms of Service</a>. Max size: <?php echo MAX_UPLOAD_SIZE / 1024 / 1024; ?>MB.
+            </p>
+        </form>
+    </div>
 </div>
 
-<h2 style="margin-top: 40px;">How it works</h2>
-<p>ThreatRadar utilizes the comprehensive <a href="https://developers.virustotal.com/reference/overview">VirusTotal v3 API</a>. When you upload a file:</p>
-<ol style="margin-left: 20px; margin-top: 10px;">
-    <li>The file is transmitted securely to VirusTotal.</li>
-    <li>An Analysis ID is returned immediately.</li>
-    <li>We poll the API until the scan finishes.</li>
-    <li>Results are presented in an easy-to-read format, displaying malicious, suspicious, and harmless verdicts.</li>
-</ol>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Comprehensive Scanning</h3>
+            <p>Utilizing the VirusTotal v3 API, your file is checked against dozens of top-tier antivirus engines simultaneously.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Immediate Feedback</h3>
+            <p>As soon as you upload, an Analysis ID is returned and the system polls the results automatically until completion.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Community Safe</h3>
+            <p>Uploaded files help the broader security community. Use our safe test samples to evaluate the system without risk.</p>
+        </div>
+    </div>
+</div>
 
 <div class="supported-by-section">
-    <h2 style="margin-top: 50px; text-align: center; border-bottom: none;">Supported By</h2>
+    <h2>Supported By</h2>
     <div class="logo-grid">
         <div class="logo-item"><img src="logos/cyberguard.png" alt="CyberGuard"></div>
         <div class="logo-item"><img src="logos/securenet.png" alt="SecureNet"></div>

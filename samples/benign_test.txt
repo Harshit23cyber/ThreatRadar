@@ -1,0 +1,1 @@
+This is a benign, safe text file created to test the ThreatRadar integration with VirusTotal. It contains no malicious code and should return a harmless scan result.

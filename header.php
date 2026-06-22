@@ -16,7 +16,7 @@
         </div>
         <div class="nav-links">
             <a href="index.php">Upload</a>
-            <a href="#">Documentation</a>
+            <a href="samples.php">Test Samples</a>
             <a href="projects.php">Projects</a>
             <a href="#">About</a>
         </div>
@@ -35,7 +35,7 @@
         <h3>Resources</h3>
         <ul>
             <li><a href="#">VirusTotal API</a></li>
-            <li><a href="#">Malware Samples</a></li>
+            <li><a href="samples.php">Test Samples</a></li>
             <li><a href="#">YARA Rules</a></li>
         </ul>
     </div>
