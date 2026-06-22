@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: threatradar
+    env: docker
+    region: oregon
+    plan: free
+    envVars:
+      - key: VIRUSTOTAL_API_KEY
+        sync: false
+      - key: APP_ENV
+        value: production
