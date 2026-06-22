@@ -453,3 +453,15 @@ code, pre {
 .nav-links a { color: #4b5563 !important; }
 .nav-links a:hover { color: #111827 !important; }
 
+
+/* Results Tabs & Details Grid */
+.tabs-container { background: #ffffff; border: 1px solid var(--border-color); border-radius: 0.5rem; overflow: hidden; }
+.tab-buttons { display: flex; border-bottom: 1px solid var(--border-color); background: #f8fafc; }
+.tab-btn { flex: 1; padding: 1rem; border: none; background: transparent; cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--text-muted); transition: all 0.2s; }
+.tab-btn:hover { color: var(--text-color); background: #f1f5f9; }
+.tab-btn.active { color: var(--accent-color); border-bottom: 2px solid var(--accent-color); background: #ffffff; }
+.tab-content { padding: 2rem; }
+.details-grid { display: grid; grid-template-columns: 200px 1fr; gap: 1rem 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem; }
+.detail-label { font-weight: 600; color: var(--text-muted); }
+.detail-value { word-break: break-all; }
+
