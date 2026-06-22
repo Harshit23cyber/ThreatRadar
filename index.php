@@ -75,4 +75,13 @@ include 'header.php';
     <li>Results are presented in an easy-to-read format, displaying malicious, suspicious, and harmless verdicts.</li>
 </ol>
 
+<div class="supported-by-section">
+    <h2 style="margin-top: 50px; text-align: center; border-bottom: none;">Supported By</h2>
+    <div class="logo-grid">
+        <div class="logo-item"><img src="logos/cyberguard.png" alt="CyberGuard"></div>
+        <div class="logo-item"><img src="logos/securenet.png" alt="SecureNet"></div>
+        <div class="logo-item"><img src="logos/openthreat.png" alt="OpenThreat"></div>
+    </div>
+</div>
+
 <?php include 'footer.php'; ?>

@@ -17,7 +17,7 @@
         <div class="nav-links">
             <a href="index.php">Upload</a>
             <a href="#">Documentation</a>
-            <a href="#">Community</a>
+            <a href="projects.php">Projects</a>
             <a href="#">About</a>
         </div>
     </div>

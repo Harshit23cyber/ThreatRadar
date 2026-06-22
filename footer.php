@@ -23,10 +23,10 @@
         <div class="footer-section">
             <h4>Legal & Info</h4>
             <ul>
-                <li><a href="#">License (MIT)</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Powered by PHP</a></li>
-                <li><a href="#">VirusTotal API</a></li>
+                <li><a href="LICENSE">Software License (MIT)</a></li>
+                <li><a href="DATA_LICENSE.txt">Data Usage License</a></li>
+                <li><a href="TERMS_OF_SERVICE.md">Terms of Service</a></li>
+                <li><a href="projects.php">Pending Projects</a></li>
             </ul>
         </div>
     </div>
