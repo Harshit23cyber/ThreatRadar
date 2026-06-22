@@ -31,16 +31,16 @@
     <div class="sidebar">
         <h3>Navigation</h3>
         <ul>
-            <li><a href="index.php">New Analysis</a></li>
-            <li><a href="#">Recent Scans</a></li>
-            <li><a href="#">API Documentation</a></li>
-            <li><a href="#">Report a Bug</a></li>
+            <li><a href="/">New Analysis</a></li>
+            <li><a href="/">Recent Scans</a></li>
+            <li><a href="https://github.com/Harshit23cyber/ThreatRadar#readme" target="_blank">API Documentation</a></li>
+            <li><a href="https://github.com/Harshit23cyber/ThreatRadar/issues" target="_blank">Report a Bug</a></li>
         </ul>
         <h3>Resources</h3>
         <ul>
-            <li><a href="#">VirusTotal API</a></li>
-            <li><a href="samples.php">Test Samples</a></li>
-            <li><a href="#">YARA Rules</a></li>
+            <li><a href="https://developers.virustotal.com/reference/overview" target="_blank">VirusTotal API</a></li>
+            <li><a href="/samples">Test Samples</a></li>
+            <li><a href="https://virustotal.github.io/yara/" target="_blank">YARA Rules</a></li>
         </ul>
     </div>
     

@@ -486,3 +486,15 @@ code, pre {
 .git-avatar, .contributors svg { width: 14px !important; height: 14px !important; margin-right: 4px !important; }
 .footer-bottom { margin-top: 1.5rem !important; padding: 1rem 2rem 0 2rem !important; font-size: 0.75rem !important; }
 
+
+/* Compact Desktop View */
+.hero { padding: 2rem 2rem !important; }
+.hero h1 { font-size: 2rem !important; margin-bottom: 0.5rem !important; }
+.hero p { font-size: 1rem !important; margin-bottom: 1.5rem !important; }
+.upload-card { padding: 2rem !important; max-width: 500px !important; }
+.upload-card label { font-size: 1rem !important; margin-bottom: 1rem !important; }
+.upload-card input[type="file"] { margin-bottom: 1rem !important; }
+.main-container { gap: 2rem !important; padding: 0 2rem !important; margin: 1rem auto !important; }
+.content { padding: 1.5rem !important; }
+.css-scanner-container { margin: 2rem 0 !important; }
+
