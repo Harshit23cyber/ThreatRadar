@@ -2,7 +2,7 @@
 // router.php
 
 // Serve static files as-is (e.g. style.css)
-if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js|ico)$/', $_SERVER["REQUEST_URI"])) {
+if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js|ico|com|txt|md)$/', $_SERVER["REQUEST_URI"])) {
     return false;
 }
 
@@ -13,6 +13,10 @@ if ($path === '/' || $path === '/index.php' || $path === '/index') {
     require 'index.php';
 } elseif ($path === '/results' || $path === '/results.php') {
     require 'results.php';
+} elseif ($path === '/samples' || $path === '/samples.php') {
+    require 'samples.php';
+} elseif ($path === '/projects' || $path === '/projects.php') {
+    require 'projects.php';
 } else {
     http_response_code(404);
     echo "<h1>404 Not Found</h1>";
