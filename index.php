@@ -71,28 +71,23 @@ include 'header.php';
 </div>
 
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-    <div class="features-grid">
-        <div class="feature-card">
-            <h3>Comprehensive Scanning</h3>
-            <p>Utilizing the VirusTotal v3 API, your file is checked against dozens of top-tier antivirus engines simultaneously.</p>
+    <div class="css-scanner-container">
+        <div class="css-scanner-box">
+            <div class="css-scanner-line"></div>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
         </div>
-        <div class="feature-card">
-            <h3>Immediate Feedback</h3>
-            <p>As soon as you upload, an Analysis ID is returned and the system polls the results automatically until completion.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Community Safe</h3>
-            <p>Uploaded files help the broader security community. Use our safe test samples to evaluate the system without risk.</p>
-        </div>
+        <p>Awaiting File Analysis...</p>
     </div>
 </div>
 
 <div class="supported-by-section">
-    <h2>Supported By</h2>
-    <div class="logo-grid">
-        <div class="logo-item"><img src="https://cdn.simpleicons.org/google/6b7280" alt="Google"></div>
-        <div class="logo-item"><img src="https://cdn.simpleicons.org/github/6b7280" alt="GitHub"></div>
-        <div class="logo-item"><img src="https://cdn.simpleicons.org/vercel/6b7280" alt="Vercel"></div>
+    <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem;">Supported By</p>
+    <div class="logo-grid small-logos">
+        <img src="https://cdn.simpleicons.org/google/6b7280" alt="Google" title="Google">
+        <img src="https://cdn.simpleicons.org/github/6b7280" alt="GitHub" title="GitHub">
+        <img src="https://cdn.simpleicons.org/vercel/6b7280" alt="Vercel" title="Vercel">
+        <img src="https://cdn.simpleicons.org/php/6b7280" alt="PHP" title="PHP">
+        <img src="https://cdn.simpleicons.org/cloudflare/6b7280" alt="Cloudflare" title="Cloudflare">
     </div>
 </div>
 

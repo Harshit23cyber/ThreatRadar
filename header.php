@@ -12,7 +12,7 @@
 <div class="top-nav">
     <div class="nav-container">
         <div class="logo">
-            <a href="/"><img src="logo.png" alt="ThreatRadar" style="height: 30px; margin-right: 10px;"><strong>ThreatRadar</strong></a>
+            <a href="/"><img src="logo.png" alt="ThreatRadar Logo" style="height: 50px; object-fit: contain;"></a>
         </div>
         <div class="nav-links">
             <a href="/">Upload</a>
